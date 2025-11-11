@@ -6,17 +6,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class DFS {
+import static AlgoritmosEmGrafos.Util.getNeighboors;
 
-    public static List<Integer> getNeighboors(int[][] mat, int vertexIndex){
-        List<Integer> neighboors = new ArrayList<>();
-        for(int i = 0; i < mat.length; i++){
-            if(vertexIndex != i && mat[vertexIndex][i] == 1){
-                neighboors.add(i);
-            }
-        }
-        return neighboors;
-    }
+public class DFS {
 
     public static List<int[]> dfsIterativo(int[][] mat){
         List<int[]> resultados = new ArrayList<>();

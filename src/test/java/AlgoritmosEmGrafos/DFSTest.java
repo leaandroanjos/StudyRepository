@@ -1,4 +1,5 @@
-import AlgoritmosEmGrafos.DFS;
+package AlgoritmosEmGrafos;
+
 import org.junit.Test;
 
 import java.util.List;
